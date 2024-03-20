@@ -216,3 +216,113 @@ footer{
     text-align: center;
     font-size: 20px;
 }
+
+  /* responsive design  */
+  /* mobile devices 
+   */
+   @media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .link{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .event h1{
+        font-size: 40px;
+        align-items: center;
+    }
+    .event-img{
+        flex-direction: column;
+    }
+
+    .event-img-item img {
+        width: 80%; 
+        height: auto;
+    }
+    .event-img-item p,.tour-section-text p{
+        font-size: 18px;
+    }
+
+    .explore .explore-item {
+        margin: 0; 
+        padding: 50px 20px; 
+    }
+
+    .tour-section {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .banner, .explore {
+        padding: 50px 20px;
+    }
+    .tour-section {
+        text-align: center;
+    }
+    .tour-section-text h2{
+        text-align: center;
+    }
+    .tour-section-text span{
+        text-align: center;
+    }
+    .tour-section-text>p{
+        width: 90%;
+    }
+        
+    .tour-img .littleimg, .tour-img .bigimg{
+        padding: 5%;
+        width: 90%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+   /* tab devices 
+   */
+   
+@media screen and (min-width:576px) and (max-width: 960px){
+    .container {
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .link{
+        display: flex;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-img-item img{
+        margin: 0;
+        padding: 0;
+        width: 280px;
+        height: 280px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 1px #c7c6c6ba;
+        object-fit: cover;
+    }
+    .event-img-item p{
+        width: 80%;
+        text-align: justify;
+    }
+    .explore .explore-item {
+        padding: 100px; 
+        margin-left: 50px;
+    }
+
+    .banner, .explore {
+        padding: 80px 40px;
+    }
+}
